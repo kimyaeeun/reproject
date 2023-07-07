@@ -38,6 +38,10 @@ $(document).ready(function(){
 
 
     let slider1best = new Swiper(".best",{
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
           breakpoints:{
             280:{
                 slidesPerView:2,
@@ -53,6 +57,10 @@ $(document).ready(function(){
     })
 
     let slider2new = new Swiper(".sliderNew",{
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
           breakpoints:{
             280:{
                 slidesPerView:2,
@@ -68,6 +76,10 @@ $(document).ready(function(){
     })
 
     let slider3promote = new Swiper(".sliderPromote",{
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
           breakpoints:{
             280:{
                 slidesPerView:2,
@@ -90,7 +102,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         let winst = $(window).scrollTop()
-        let winHeight = $(window).height()*0.9
+        let winHeight = $(window).height()*0.75
         
         $(".scTop").each(function(){
             if(winst+winHeight>$(this).offset().top){
@@ -129,7 +141,8 @@ $(document).ready(function(){
             768:{
                 slidesPerView:5,
                 spaceBetween:30,
-                loop:true
+                // loop:true
+                clickable:false
             },
         }
     })

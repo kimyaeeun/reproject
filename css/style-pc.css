@@ -533,7 +533,7 @@ main .mainBanner::after{
 .mtDown{
     transform: translateX(50px);
     opacity: 0;
-    transition: all 0.5s ease 0;
+    /* transition: all 0.5s ease 0; */
 } 
 .mtDown.on{
     transform: translateX(0);
