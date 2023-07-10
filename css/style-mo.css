@@ -871,25 +871,40 @@ main .sub2Mainbanner > figure::after{
     width: 90%;
     margin: 0 auto;
 }
-.topfleft{
+.bottomTop{
     color: #fff;
-    width: 100%;
-    padding-top: 60px;
-    font-weight: bold;
+    width: 90%;
+    border: 1px solid red;
+    margin: 0 auto;
 }
-.topfleft li {
+.bottomTop>p{
+    font-weight: 400;
+    font-size: 20px;
     padding: 20px 0;
-    font-size: 1.5rem;
-    margin-right: 104px;
-    border-bottom: 1px solid #fff;
-    width: 100%;
 }
-.topfRight{
-    color: #fff;
-    font-size: 12px;
-    width: 30%;
-    padding-top: 60px;
-    padding-left: 150px;
+.bottomTop span{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.rToL{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.rToL>.directR>ul{display: flex;}
+.rToL>.directR>ul>li{
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+.rToL>.directR>ul>li:first-of-type{padding-left: 0;}
+.rToL>.directR>ul>li:last-of-type{border-right: none;}
+.bottomCon{
+    width: 100%;
+    border: 1px solid red;
 }
 .topfRight > p{margin-bottom: 5px;}
 .topfRight > address{margin-bottom: 20px;}
